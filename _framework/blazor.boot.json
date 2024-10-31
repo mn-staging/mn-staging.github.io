@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MelonBarkMudBlazor",
   "resources": {
-    "hash": "sha256-sy4PPOCvjRlc/q11o9N4DZ47BKxD0ARaG8Jm2juVjVk=",
+    "hash": "sha256-j2FeYH28XZ5I2aKneNmIT5vm07ftKAdHWAi7H1vMgfk=",
     "jsModuleNative": {
       "dotnet.native.8.0.10.dttvpwtuld.js": "sha256-QVxMlY7ohmjgde/bZMA0dlWDAeuUP+tEfkiSdg4DFcE="
     },
@@ -18,7 +18,7 @@
     },
     "assembly": {
       "HtmlAgilityPack.wasm": "sha256-v/PSWzb3lQEPBKCgaf9YkgqxXsKYUCOaCqe5AFsgGIk=",
-      "MelonBarkMudBlazor.wasm": "sha256-cqoUHf/Gc3R1WJUc0MjOdWxSnnM03VBfHt0TpMFTSZw=",
+      "MelonBarkMudBlazor.wasm": "sha256-odN3kADxknPv0/tJCs7qFpFp7pOsm54qqLTVoZlzxqU=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-549R/WBJioiK53/P0uOG+L+3lBov9JKe1yFwLwliIHA=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-kCqKeH3AwpFY6dwZQcOFM/ZtRygSihNfC/K8B17mwVk=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-flIr9z2p3LnFc/9IH/xwRcPaovUMCkrumJFDjUTr3AA=",

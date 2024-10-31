@@ -17,12 +17,48 @@
       "url": "assets\/apple-touch-icon.png"
     },
     {
+      "hash": "sha256-xF5dJYdYOjFPEj25zIbYTQS6nj34+avJ88cfR+2N7Mo=",
+      "url": "assets\/card_images\/EffiMail-Card1.jfif"
+    },
+    {
+      "hash": "sha256-SPgjvjm2wqN7odA98GN66Ya7zmDfqDb18NsA08xel5k=",
+      "url": "assets\/card_images\/EffiMail-Card2.jfif"
+    },
+    {
+      "hash": "sha256-k+sVAUxHspJEAlG2ZR7xMR8HbTvYtGY7ODR9nDKz16g=",
+      "url": "assets\/card_images\/EffiMail-Card3.jfif"
+    },
+    {
+      "hash": "sha256-ae8CAEPMAb1UzsA4jYwEiAxXdFWu903L+hA2F9yBhXw=",
+      "url": "assets\/card_images\/EffiMail-Card4.jfif"
+    },
+    {
       "hash": "sha256-qRDg9KQAaaybexQ\/Jj0u0GpMwTpVMzbENvNLS2W\/hMI=",
       "url": "assets\/card_images\/pexels-fauxels-3183197.jpg"
     },
     {
       "hash": "sha256-rhTGJP\/XQdqUJdLMhk6XQ67ftE8O6qNq0As+a+Kos54=",
       "url": "assets\/card_images\/pexels-negativespace-34140.jpg"
+    },
+    {
+      "hash": "sha256-UukrJqrWAdDJ00q\/3PN+cZfnGV\/yljsSxP9U30GNRcc=",
+      "url": "assets\/card_images\/SubMail-Card1.jfif"
+    },
+    {
+      "hash": "sha256-Y9X4M5E642uF4eDXlT1w763uM5hfl99wkYtnoN9VAnM=",
+      "url": "assets\/card_images\/WebApp-Design-Card1.jfif"
+    },
+    {
+      "hash": "sha256-D591X19bLQt6r2AkE5yB6HBPMRV\/g1lKigEBBqQDPDs=",
+      "url": "assets\/card_images\/WebApp-Design-Card2.jfif"
+    },
+    {
+      "hash": "sha256-UfYBYVeSwRNKtoGCO1tPSiJJmKdB8I\/rQFj4uapXLqc=",
+      "url": "assets\/card_images\/WebApp-Design-Card3.jfif"
+    },
+    {
+      "hash": "sha256-2ksUsiVP\/Yky8yBz3nsgDLzfnVwlUpLixq8bX6kIdao=",
+      "url": "assets\/card_images\/WebApp-Design-Card4.jfif"
     },
     {
       "hash": "sha256-9bMO4OoDdRjb2W2PKpK5QDO53YSVyWhPPeWBfoZ1y6A=",
@@ -117,7 +153,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Xv3W6jA58vzHcPlMnZNZ+yGqTGyPNrSevl0PNgEzEOQ=",
+      "hash": "sha256-Do+B1dRkBSZ2uLH6C6Bbk6riLpU6WTfCRUUmlsErglU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -125,7 +161,7 @@
       "url": "_framework\/HtmlAgilityPack.wasm"
     },
     {
-      "hash": "sha256-cqoUHf\/Gc3R1WJUc0MjOdWxSnnM03VBfHt0TpMFTSZw=",
+      "hash": "sha256-odN3kADxknPv0\/tJCs7qFpFp7pOsm54qqLTVoZlzxqU=",
       "url": "_framework\/MelonBarkMudBlazor.wasm"
     },
     {
@@ -341,5 +377,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "cDMOqbh8"
+  "version": "kuQFMTWL"
 };
