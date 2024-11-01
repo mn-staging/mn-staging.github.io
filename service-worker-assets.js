@@ -17,6 +17,10 @@
       "url": "assets\/apple-touch-icon.png"
     },
     {
+      "hash": "sha256-dfM45cUdFmtOQoYF88xcdCKv9V1JDFllu\/Uj0u1O3H0=",
+      "url": "assets\/black_on_white-square.svg"
+    },
+    {
       "hash": "sha256-xF5dJYdYOjFPEj25zIbYTQS6nj34+avJ88cfR+2N7Mo=",
       "url": "assets\/card_images\/EffiMail-Card1.jfif"
     },
@@ -105,11 +109,11 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-zVWCYK7jIUQCpWr3IrYwrwhQ0Ka\/yf\/G96zMLQqBF50=",
+      "hash": "sha256-MGRsDAMYNmDZd9eCcR4Ho1F0wor6AefftBCNpdHYrjc=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-p2gPmE5RpovHW0+xFeUkDJYufSWO9G2PVbJ1gbcxn9U=",
+      "hash": "sha256-y\/Kcg+Lg+wRWZSGeudnpimgwrA8K5osc8MH9yutd5OU=",
       "url": "manifest.json"
     },
     {
@@ -153,7 +157,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-K47u2peZDPe+Wl71lTdG1MvLdRs+oJ8UYa750A5UPRI=",
+      "hash": "sha256-0wqzHNa8QeT6\/\/kWFMWN\/gXAKjetf7ilPw8DSYZyiWw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -161,7 +165,7 @@
       "url": "_framework\/HtmlAgilityPack.wasm"
     },
     {
-      "hash": "sha256-gzVOXn2i+1QqmEBEgjuCs9bq0TFtIx0KVM4eLMYkJmM=",
+      "hash": "sha256-bk\/NnRjE74+HExUtnlQZTs2UWL6apNeQqwmlKcfAtng=",
       "url": "_framework\/MelonBarkMudBlazor.wasm"
     },
     {
@@ -345,7 +349,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm"
     },
     {
-      "hash": "sha256-nA53jSSqOInzUK5SoPgFbhMegxKSt2\/4t7mgyExfFNM=",
+      "hash": "sha256-aPO0wrCWZSdCZRQa9tN4IAz0X8nqb2zwhoS9hQ9mMf4=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -377,5 +381,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "w6TEZ0n1"
+  "version": "nVm6K2EY"
 };
