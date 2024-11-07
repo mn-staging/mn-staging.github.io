@@ -1,4 +1,4 @@
-name: Deploy to Melon Bark Production
+name: Deploy Staging to Melon Bark Production
 
 on:
   workflow_dispatch:
@@ -8,22 +8,26 @@ on:
         required: true
         default: 'latest'
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # The job-specific permissions are now at the workflow level as per the latest understanding
     steps:
-    - name: Checkout Staging
-      uses: actions/checkout@v2
-      with:
-        repository: mn-staging/mn-staging.github.io
-        ref: main  # or whatever branch your staging site is on
+      - name: Checkout Staging
+        uses: actions/checkout@v4
+        with:
+          repository: mn-staging/mn-staging.github.io
+          ref: main  # Adjust if using a different branch for staging
 
-    - name: Deploy to Melon Bark Production
-      uses: JamesIves/github-pages-deploy-action@4.1.4
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: main  # or gh-pages if that's your deployment branch for MelonBark.github.io
-        FOLDER: .  # or specify the folder where your built files are, e.g., docs/
-        CLEAN: true
-        REPOSITORY_NAME: MelonBark/MelonBark.github.io
-        COMMIT_MESSAGE: "Deploy ${{ github.event.inputs.version }} to production"
+      - name: Deploy to Melon Bark Production
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main  # or 'gh-pages' if that's the deployment branch for MelonBark.github.io
+          folder: .
+          target-folder: .
+          commit-message: "Deploy ${{ github.event.inputs.version }} to production"
