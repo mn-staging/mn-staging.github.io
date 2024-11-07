@@ -1,0 +1,29 @@
+name: Deploy to Melon Bark Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to deploy'
+        required: true
+        default: 'latest'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Staging
+      uses: actions/checkout@v2
+      with:
+        repository: mn-staging/mn-staging.github.io
+        ref: main  # or whatever branch your staging site is on
+
+    - name: Deploy to Melon Bark Production
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: main  # or gh-pages if that's your deployment branch for MelonBark.github.io
+        FOLDER: .  # or specify the folder where your built files are, e.g., docs/
+        CLEAN: true
+        REPOSITORY_NAME: MelonBark/MelonBark.github.io
+        COMMIT_MESSAGE: "Deploy ${{ github.event.inputs.version }} to production"
