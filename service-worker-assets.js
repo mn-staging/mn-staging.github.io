@@ -185,7 +185,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-MIWIK0PdD+icR4NXcCLx71ytyj1eCcIOmiMzHPkvwdE=",
+      "hash": "sha256-sobJMrvwlEzDy\/f4y\/VDgyzcigFHiNItwoAT1l4g8Vw=",
       "url": "sitemap.xml"
     },
     {
@@ -453,5 +453,5 @@
       "url": "_content\/MarkNobleRCL\/MarkNobleRCL.bundle.scp.css"
     }
   ],
-  "version": "s\/aaZv4q"
+  "version": "kxl2u1l7"
 };

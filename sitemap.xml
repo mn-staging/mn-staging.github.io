@@ -3,33 +3,37 @@
   <url>
     <loc>https://marknoble.com/about</loc>
     <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marknoble.com/contact</loc>
     <lastmod>2025-07-07</lastmod>
-  </url>
-  <url>
-    <loc>https://marknoble.com/counter</loc>
-    <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://marknoble.com/downloads</loc>
     <lastmod>2025-06-30</lastmod>
-  </url>
-  <url>
-    <loc>https://marknoble.com/fetchdata</loc>
-    <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://marknoble.com/</loc>
     <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://marknoble.com/news</loc>
     <lastmod>2025-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://marknoble.com/projects</loc>
     <lastmod>2025-06-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
