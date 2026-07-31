@@ -1,20 +1,20 @@
 self.assetsManifest = {
-  "version": "ChOHiSBF",
+  "version": "mdY90V9V",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-ZSXoKWNSFEmsvJYDOMsQj+/qjUff72DhivVWkwa/e54=",
+      "hash": "sha256-A0TfFO0qTbTaRbMqd8vkVnTl0N0aXG6cKvcj4InJR8c=",
       "url": "404.html"
     },
     {
-      "hash": "sha256-AN5QSuWw4qN4vqAlTAbH9ucCOb3+QJEZB9eDDNXbxNQ=",
+      "hash": "sha256-5//WoJCAgSj0IMsYeSvMJQRmaMnHZO7WnfHXNx71x28=",
       "url": "Styles/MelonBark.css"
     },
     {
-      "hash": "sha256-q+PZSsTga91ka0nDMvXHwzPkuTEE0+aNumeMOAIY9II=",
+      "hash": "sha256-vwKCs5bMNheRXJnNZOOu4p3uiTeLHuuDNZC/lVmZdsY=",
       "url": "_content/MudBlazor/MudBlazor.min.css"
     },
     {
@@ -230,7 +230,7 @@ self.assetsManifest = {
       "url": "_framework/System.wasm"
     },
     {
-      "hash": "sha256-kqK4WezHaMNAnV87CNkeC9b51Yn4sS6oLXifO1GIs0o=",
+      "hash": "sha256-6uGXujlu8B9jexDB9797BoBnSO/iFd9sLAoH+hSUojk=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -282,7 +282,7 @@ self.assetsManifest = {
       "url": "assets/MelonBarkBlackLogo.png"
     },
     {
-      "hash": "sha256-J2yg9IIC4nITca1CtaY0rqfQsQAhNbSjngjQBvBOtOI=",
+      "hash": "sha256-98irRxqzAOtQRU5iYYq8y7DN9YZ3ESscuLbDbjo1yws=",
       "url": "assets/MelonBarkLogoStyle.svg"
     },
     {
@@ -302,7 +302,7 @@ self.assetsManifest = {
       "url": "assets/apple-touch-icon.png"
     },
     {
-      "hash": "sha256-dfM45cUdFmtOQoYF88xcdCKv9V1JDFllu/Uj0u1O3H0=",
+      "hash": "sha256-4cYmkiK6WOc03mKFKessUvOQPJFKvQvSKVic50WIiDA=",
       "url": "assets/black_on_white-square.svg"
     },
     {
@@ -362,7 +362,7 @@ self.assetsManifest = {
       "url": "assets/favicon.ico"
     },
     {
-      "hash": "sha256-Ms1d+cUCWA+6k1pedIC8Vq78U+5cvqgXs7apJ0n0CK0=",
+      "hash": "sha256-bc+3YCR0rs6f+Z8mwBUBCZoysSwqc0h2RU7LPAhY8VI=",
       "url": "assets/submail.svg"
     },
     {
@@ -374,19 +374,19 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-P6u8IW1WIPU/Bw6vPoVWrvz0BhnGjpfCFDHg570+NXc=",
+      "hash": "sha256-2U2sgMzY92g/rtixTKZgCgi+FcTod163YgPM6mfncME=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-6DE2JK2OE6CoWccJN+sMHyUf6r8iYCw+/z8ZDL8s8SY=",
+      "hash": "sha256-vonOD9yXU1otiIZXqSPqZoeydsMmL4pwy1mHQrFR2po=",
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-yzFf+O/mlH+Q9klUSqXP2kxGKOUFLPxaww8da8fKhGU=",
+      "hash": "sha256-G2Gt/NEghVOb03D3TQ6vquZsg+CQiQ/oUFIZblldNJQ=",
       "url": "sample-data/weather.json"
     },
     {
-      "hash": "sha256-QqTJe3oQHy+S/g0KvaWA2yz+LRi01IjKiM9GH+qTK3w=",
+      "hash": "sha256-IcMQiEXOovpsUUWlq5C85VSs/eP+1HlIJo5aQifToSM=",
       "url": "sitemap.xml"
     }
   ]
