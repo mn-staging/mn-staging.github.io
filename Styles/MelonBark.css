@@ -1,0 +1,30 @@
+.docs-appbar {
+
+    z-index: var(--mud-zindex-appbar);
+}
+
+.docs-appbar-filter {
+    backdrop-filter: blur(12px);
+    z-index: var(--mud-zindex-appbar);
+}
+
+.mud-grid .mud-item {
+    margin-bottom: 1rem;
+}
+
+.mb4 {
+    margin-bottom: 1rem;
+}
+
+.card-button {
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid white;
+    /*text-shadow: 1px 1px 2px black;*/
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: white !important;
+    color: black !important;
+}
