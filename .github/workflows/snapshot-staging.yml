@@ -1,0 +1,53 @@
+name: Snapshot staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: Why this snapshot is being taken
+        required: false
+        default: manual
+  repository_dispatch:
+    types: [snapshot-staging]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: staging-pages-mutation
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staging Pages
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Tag current main as known-good
+        env:
+          REASON: ${{ github.event.inputs.reason || github.event.action || 'automated' }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout main
+          git pull --ff-only origin main
+
+          TS="$(date -u +%Y%m%d-%H%M%S)"
+          MOVING="stg-last-known-good"
+          STAMPED="stg-${TS}"
+          SHA="$(git rev-parse HEAD)"
+
+          git tag -f -a "$MOVING" -m "Last known-good staging (${REASON}) at ${SHA}"
+          git tag -a "$STAMPED" -m "Staging snapshot ${TS} (${REASON}) at ${SHA}"
+
+          git push origin "refs/tags/${STAMPED}"
+          git push origin "refs/tags/${MOVING}" --force
+
+          echo "### Staging snapshot created" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Moving tag: \`$MOVING\` → \`$SHA\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Point-in-time tag: \`$STAMPED\`" >> "$GITHUB_STEP_SUMMARY"

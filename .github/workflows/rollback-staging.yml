@@ -1,0 +1,73 @@
+name: Rollback staging
+
+on:
+  workflow_dispatch:
+    inputs:
+      snapshot_ref:
+        description: Tag or commit to restore (default stg-last-known-good)
+        required: false
+        default: stg-last-known-good
+      confirm:
+        description: Type the word rollback to confirm
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: staging-pages-mutation
+  cancel-in-progress: false
+
+jobs:
+  rollback:
+    if: ${{ inputs.confirm == 'rollback' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staging Pages
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore site from snapshot
+        env:
+          SNAPSHOT_REF: ${{ inputs.snapshot_ref }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout main
+          git pull --ff-only origin main
+
+          REF="$SNAPSHOT_REF"
+          if ! git rev-parse --verify "$REF" >/dev/null 2>&1; then
+            git fetch origin "refs/tags/${REF}:refs/tags/${REF}" || true
+          fi
+          if ! git rev-parse --verify "$REF" >/dev/null 2>&1; then
+            echo "ERROR: snapshot ref not found: $REF"
+            exit 1
+          fi
+
+          TARGET_SHA="$(git rev-parse "$REF^{commit}")"
+          TMP="$(mktemp -d)"
+          if [ -d .github ]; then cp -a .github "$TMP/.github"; fi
+
+          git rm -r --quiet . || true
+          git checkout "$TARGET_SHA" -- .
+
+          if [ -d "$TMP/.github" ]; then
+            rm -rf .github
+            cp -a "$TMP/.github" .github
+          fi
+          : > .nojekyll
+
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes; staging already matches $REF."
+            exit 0
+          fi
+
+          git commit -m "Emergency rollback: restore staging from ${REF} (${TARGET_SHA})"
+          git push origin main
+
+          echo "### Staging rolled back from \`$REF\`" >> "$GITHUB_STEP_SUMMARY"
